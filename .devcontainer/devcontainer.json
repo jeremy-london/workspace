@@ -1,0 +1,66 @@
+{
+    "name": "Knowledge Base Interview Environment",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "devcontainer",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+    "runServices": [
+        "chromadb"
+    ],
+    "waitFor": "postCreateCommand",
+    "postCreateCommand": "echo '✅ Devcontainer created - running model preload...' && python /usr/local/bin/preload_models.py",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+
+                "editor.tabSize": 4,
+                
+                "[python]": {
+                    "editor.formatOnSave": false,
+                    "editor.formatOnPaste": false,
+                    "defaultInterpreterPath": "/usr/local/bin/python"
+                },
+            
+                // Disable GitHub Copilot completely
+                "github.copilot.enable": false,
+                "github.copilot.editor.enableAutoCompletions": false,
+                "github.copilot.inlineSuggest.enable": false,
+                
+                // Disable Copilot Chat
+                "github.copilot.chat.enable": false,
+                "github.copilot.chat.welcomeMessage": "disabled",
+                
+                // Disable all AI-assisted features
+                "editor.inlineSuggest.enabled": false,
+                "editor.suggest.showInlineCompletions": false,
+                
+                // Disable other AI tools
+                "chatgpt.enable": false,
+                "codeium.enableCodeLens": false,
+                "codeium.enableConfig": false,
+                "tabnine.experimentalAutoImports": false,
+                
+                // Disable IntelliCode AI suggestions (keep basic IntelliSense)
+                "vsintellicode.modify.editor.suggestSelection": "disabled",
+
+                "extensions.ignoreRecommendations": true,
+                "remote.autoForwardPorts": false,
+                "remote.restoreForwardedPorts": false,
+                "remote.portsAttributes": {
+                    "1-65000": {
+                        "label": "Application",
+                        "onAutoForward": "ignore"
+                    }
+                }
+            }
+        }
+    }
+}

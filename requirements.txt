@@ -1,0 +1,2 @@
+chromadb-client==1.1.0
+sentence-transformers==2.3.1

@@ -1,0 +1,33 @@
+networks:
+  devcontainer-net:
+    driver: bridge
+
+services:
+  devcontainer:
+    container_name: devcontainer
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:      
+      - ..:/workspace:cached
+      - model-cache:/root/.cache/huggingface
+    networks:
+      - devcontainer-net
+    depends_on:
+      - chromadb
+
+  chromadb:
+    image: chromadb/chroma:1.1.0
+    container_name: chromadb
+    volumes:
+      - chroma-data:/data
+    ports:
+      - "8000:8000"
+    networks:
+      - devcontainer-net
+
+volumes:
+  chroma-data:
+    name: devcontainer-chroma-data
+  model-cache:
+    name: devcontainer-model-cache

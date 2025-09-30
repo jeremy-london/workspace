@@ -1,0 +1,242 @@
+[
+    {
+      "id": "fact_1727894531001",
+      "text": "Customer churn increases by 40% when KeeperPAM onboarding takes longer than 30 days, particularly in enterprise accounts with 500+ users",
+      "metadata": {
+        "source": "Customer Success Analytics",
+        "timestamp": "2025-09-15 14:22:10"
+      }
+    },
+    {
+      "id": "fact_1727894531002",
+      "text": "Customers who adopt KeeperAI threat detection within 90 days show 65% higher renewal rates compared to those using only password management features",
+      "metadata": {
+        "source": "Product Analytics",
+        "timestamp": "2025-09-20 09:15:33"
+      }
+    },
+    {
+      "id": "fact_1727894531003",
+      "text": "GovCloud customers require FedRAMP authorization documentation within the first 14 days of purchase or risk delayed deployment and potential churn",
+      "metadata": {
+        "source": "Federal Sales Team",
+        "timestamp": "2025-09-18 11:43:28"
+      }
+    },
+    {
+      "id": "fact_1727894531004",
+      "text": "Customer support ticket resolution time under 4 hours correlates with 85% retention rate, while >24 hour resolution shows only 52% retention",
+      "metadata": {
+        "source": "Customer Success Operations",
+        "timestamp": "2025-09-22 16:10:45"
+      }
+    },
+    {
+      "id": "fact_1727894531005",
+      "text": "Accounts with active SIEM integration using ARAM events show 3x lower churn risk than those without external security monitoring",
+      "metadata": {
+        "source": "RevOps Analytics",
+        "timestamp": "2025-09-19 08:30:12"
+      }
+    },
+    {
+      "id": "fact_1727894531006",
+      "text": "The top predictor of enterprise churn is lack of adoption by privileged users - accounts with <30% PAM adoption in first 60 days churn at 70% rate",
+      "metadata": {
+        "source": "Customer Health Scoring Model",
+        "timestamp": "2025-09-21 13:55:20"
+      }
+    },
+    {
+      "id": "fact_1727894531007",
+      "text": "AI-powered session recording analysis that identifies critical threats generates 4x more engagement from security teams compared to manual review prompts",
+      "metadata": {
+        "source": "Product Engagement Team",
+        "timestamp": "2025-09-17 10:22:47"
+      }
+    },
+    {
+      "id": "fact_1727894531008",
+      "text": "Customers using Secrets Manager with automated password rotation have 45% lower incident response costs and 30% higher NPS scores",
+      "metadata": {
+        "source": "Customer Success Research",
+        "timestamp": "2025-09-14 15:40:33"
+      }
+    },
+    {
+      "id": "fact_1727894531009",
+      "text": "Marketing campaigns targeting DevOps teams with KeeperPAM database access features show 2.3x higher conversion than generic PAM messaging",
+      "metadata": {
+        "source": "Marketing Analytics",
+        "timestamp": "2025-09-16 12:18:55"
+      }
+    },
+    {
+      "id": "fact_1727894531010",
+      "text": "Sales cycles shorten by 35% when prospects receive AI-generated custom security posture assessments based on their industry vertical",
+      "metadata": {
+        "source": "Sales Operations",
+        "timestamp": "2025-09-23 09:05:18"
+      }
+    },
+    {
+      "id": "fact_1727894531011",
+      "text": "Early warning indicator for churn: accounts with declining gateway connection frequency over 3 consecutive weeks have 80% churn probability within 90 days",
+      "metadata": {
+        "source": "Predictive Analytics Model",
+        "timestamp": "2025-09-25 14:30:22"
+      }
+    },
+    {
+      "id": "fact_1727894531012",
+      "text": "Financial planning accuracy improves by 28% when using AI forecasting models that incorporate customer usage telemetry and engagement scores",
+      "metadata": {
+        "source": "Finance Analytics",
+        "timestamp": "2025-09-12 11:45:08"
+      }
+    },
+    {
+      "id": "fact_1727894531013",
+      "text": "Customer Success teams using AI-powered risk scoring can proactively intervene 45 days earlier than traditional health checks, reducing churn by 22%",
+      "metadata": {
+        "source": "CS Operations Research",
+        "timestamp": "2025-09-24 08:55:40"
+      }
+    },
+    {
+      "id": "fact_1727894531014",
+      "text": "Accounts with Keeper mobile app adoption above 60% show 50% lower churn rates and 40% higher expansion revenue opportunities",
+      "metadata": {
+        "source": "Product Analytics",
+        "timestamp": "2025-09-13 16:20:15"
+      }
+    },
+    {
+      "id": "fact_1727894531015",
+      "text": "Zero Trust Network Access adoption correlates with 90-day expansion deals in 73% of enterprise accounts when deployed within first quarter",
+      "metadata": {
+        "source": "RevOps Expansion Analysis",
+        "timestamp": "2025-09-11 10:35:50"
+      }
+    },
+    {
+      "id": "fact_1727894531016",
+      "text": "AI-generated personalized training content increases KeeperPAM feature adoption by 55% compared to generic documentation links",
+      "metadata": {
+        "source": "Customer Education Team",
+        "timestamp": "2025-09-26 13:12:28"
+      }
+    },
+    {
+      "id": "fact_1727894531017",
+      "text": "Customers who experience KeeperAI-detected critical session terminations report 95% satisfaction with threat prevention capabilities",
+      "metadata": {
+        "source": "Product Feedback Analysis",
+        "timestamp": "2025-09-27 15:48:35"
+      }
+    },
+    {
+      "id": "fact_1727894531018",
+      "text": "Marketing ROI increases 2.1x when AI copilots generate campaign content tailored to specific compliance frameworks like FedRAMP and NIST",
+      "metadata": {
+        "source": "Marketing Operations",
+        "timestamp": "2025-09-10 09:22:18"
+      }
+    },
+    {
+      "id": "fact_1727894531019",
+      "text": "Renewal probability drops to 35% when customers don't establish session recording policies within first 45 days of KeeperPAM deployment",
+      "metadata": {
+        "source": "Retention Analysis",
+        "timestamp": "2025-09-28 11:05:42"
+      }
+    },
+    {
+      "id": "fact_1727894531020",
+      "text": "AI-driven anomaly detection in privileged sessions identifies 8x more insider threat indicators than rule-based monitoring alone",
+      "metadata": {
+        "source": "Security Research Team",
+        "timestamp": "2025-09-08 14:55:20"
+      }
+    },
+    {
+      "id": "fact_1727894531021",
+      "text": "Customer health scores that incorporate AI-analyzed support ticket sentiment predict churn with 89% accuracy 60 days in advance",
+      "metadata": {
+        "source": "Customer Success AI Model",
+        "timestamp": "2025-09-29 10:18:33"
+      }
+    },
+    {
+      "id": "fact_1727894531022",
+      "text": "Sales teams using AI-generated competitive battle cards win 43% more deals against CyberArk and Delinea compared to static content",
+      "metadata": {
+        "source": "Sales Enablement Analytics",
+        "timestamp": "2025-09-07 16:42:15"
+      }
+    },
+    {
+      "id": "fact_1727894531023",
+      "text": "Automated risk classification of privileged sessions enables security teams to reduce incident investigation time by 62% on average",
+      "metadata": {
+        "source": "Product Performance Data",
+        "timestamp": "2025-09-30 08:30:55"
+      }
+    },
+    {
+      "id": "fact_1727894531024",
+      "text": "Customers with integration to existing SOC systems via ARAM events show 2.5x higher product stickiness and lower price sensitivity",
+      "metadata": {
+        "source": "RevOps Integration Analysis",
+        "timestamp": "2025-09-06 12:25:40"
+      }
+    },
+    {
+      "id": "fact_1727894531025",
+      "text": "AI-powered customer journey mapping reveals that 68% of churned accounts never completed initial gateway deployment successfully",
+      "metadata": {
+        "source": "Churn Post-Mortem Analysis",
+        "timestamp": "2025-09-05 15:10:28"
+      }
+    },
+    {
+      "id": "fact_1727894531026",
+      "text": "Finance teams using intelligent copilots for revenue forecasting reduce variance by 31% compared to traditional spreadsheet models",
+      "metadata": {
+        "source": "Finance Operations",
+        "timestamp": "2025-09-04 11:38:12"
+      }
+    },
+    {
+      "id": "fact_1727894531027",
+      "text": "Enterprise accounts with quarterly business reviews that include AI-generated ROI reports renew at 94% rate versus 71% without",
+      "metadata": {
+        "source": "Customer Success Best Practices",
+        "timestamp": "2025-09-03 09:52:48"
+      }
+    },
+    {
+      "id": "fact_1727894531028",
+      "text": "Marketing campaigns using AI-optimized send times and personalized content achieve 3.2x higher engagement in cybersecurity decision-maker segments",
+      "metadata": {
+        "source": "Marketing Automation Analytics",
+        "timestamp": "2025-09-02 14:20:35"
+      }
+    },
+    {
+      "id": "fact_1727894531029",
+      "text": "Keeper Discovery feature adoption within 30 days correlates with 88% likelihood of privileged account expansion in enterprise environments",
+      "metadata": {
+        "source": "Product-Led Growth Analysis",
+        "timestamp": "2025-09-01 10:45:15"
+      }
+    },
+    {
+      "id": "fact_1727894531030",
+      "text": "AI sentiment analysis of user feedback identifies feature gaps 6 weeks faster than traditional quarterly surveys, enabling proactive roadmap adjustments",
+      "metadata": {
+        "source": "Product Management AI Tools",
+        "timestamp": "2025-08-31 16:15:42"
+      }
+    }
+  ]

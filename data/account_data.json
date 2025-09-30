@@ -1,0 +1,242 @@
+[
+    {
+      "id": "acct_001_profile",
+      "text": "Account: Acme Financial Services. Industry: Banking & Finance. Employees: 2500. Contract Value: $125K ARR. Products: KeeperPAM Enterprise, Secrets Manager. Deployment Date: 2024-03-15. Health Score: 85/100. Gateway Connections Last 30d: 45,230. Privileged Users: 340. Active Users: 312 (92% adoption). Session Recordings: 8,420. ARAM Events Generated: 1,250. SIEM Integration: Splunk. Primary Contact: Sarah Chen, CISO. Last QBR: 2025-08-15. Renewal Date: 2026-03-15. Expansion Opportunity: Remote Browser Isolation. Support Tickets Last Quarter: 3 (avg resolution 2.5hrs). NPS Score: 9. Risk Factors: None. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-001-ACME-FIN",
+        "industry": "financial_services",
+        "health_score": "85",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_002_profile",
+      "text": "Account: TechCorp Industries. Industry: Technology & SaaS. Employees: 850. Contract Value: $78K ARR. Products: KeeperPAM Business, Password Manager. Deployment Date: 2024-11-02. Health Score: 45/100. Gateway Connections Last 30d: 1,240. Privileged Users: 120. Active Users: 45 (38% adoption). Session Recordings: 320. ARAM Events Generated: 85. SIEM Integration: None. Primary Contact: Mike Rodriguez, IT Director. Last QBR: 2025-06-10. Renewal Date: 2025-11-02. Expansion Opportunity: None identified. Support Tickets Last Quarter: 18 (avg resolution 14hrs). NPS Score: 4. Risk Factors: Low adoption, poor engagement, no SIEM integration, high support volume. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-002-TECH-IND",
+        "industry": "technology",
+        "health_score": "45",
+        "churn_risk": "critical"
+      }
+    },
+    {
+      "id": "acct_003_profile",
+      "text": "Account: Federal Defense Logistics Agency. Industry: Government/Federal. Employees: 15000. Contract Value: $450K ARR. Products: KeeperPAM GovCloud, Secrets Manager, EPM. Deployment Date: 2023-06-20. Health Score: 92/100. Gateway Connections Last 30d: 125,600. Privileged Users: 1,850. Active Users: 1,755 (95% adoption). Session Recordings: 35,800. ARAM Events Generated: 4,200. SIEM Integration: QRadar. Primary Contact: Col. James Patterson, CIO. Last QBR: 2025-09-05. Renewal Date: 2026-06-20. Expansion Opportunity: Additional user licenses, KeeperAI threat detection. Support Tickets Last Quarter: 8 (avg resolution 1.2hrs). NPS Score: 10. Risk Factors: None. FedRAMP Required: Yes. Compliance: NIST 800-171, CMMC Level 2.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-003-FDLA-GOV",
+        "industry": "government",
+        "health_score": "92",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_004_profile",
+      "text": "Account: HealthFirst Medical Group. Industry: Healthcare. Employees: 3200. Contract Value: $95K ARR. Products: KeeperPAM Enterprise, Password Manager. Deployment Date: 2024-07-12. Health Score: 68/100. Gateway Connections Last 30d: 18,500. Privileged Users: 280. Active Users: 210 (75% adoption). Session Recordings: 4,100. ARAM Events Generated: 620. SIEM Integration: Microsoft Sentinel. Primary Contact: Dr. Lisa Kumar, VP IT Security. Last QBR: 2025-07-30. Renewal Date: 2026-07-12. Expansion Opportunity: Secrets Manager, increased user licenses. Support Tickets Last Quarter: 12 (avg resolution 6hrs). NPS Score: 7. Risk Factors: Moderate adoption rate, delayed mobile app rollout. FedRAMP Required: No. Compliance: HIPAA, HITECH.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-004-HEALTH-MED",
+        "industry": "healthcare",
+        "health_score": "68",
+        "churn_risk": "medium"
+      }
+    },
+    {
+      "id": "acct_005_profile",
+      "text": "Account: Global Manufacturing Solutions. Industry: Manufacturing. Employees: 8500. Contract Value: $215K ARR. Products: KeeperPAM Enterprise, Secrets Manager, RBI, EPM. Deployment Date: 2023-01-18. Health Score: 78/100. Gateway Connections Last 30d: 67,400. Privileged Users: 680. Active Users: 595 (87% adoption). Session Recordings: 18,900. ARAM Events Generated: 2,100. SIEM Integration: Splunk. Primary Contact: Robert Chen, Global CISO. Last QBR: 2025-08-22. Renewal Date: 2026-01-18. Expansion Opportunity: Additional sites in APAC region. Support Tickets Last Quarter: 15 (avg resolution 4.5hrs). NPS Score: 8. Risk Factors: International connectivity issues in 2 remote sites. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-005-GLOBAL-MFG",
+        "industry": "manufacturing",
+        "health_score": "78",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_006_profile",
+      "text": "Account: StartupHub Ventures. Industry: Technology & SaaS. Employees: 145. Contract Value: $18K ARR. Products: KeeperPAM Business. Deployment Date: 2025-02-28. Health Score: 52/100. Gateway Connections Last 30d: 890. Privileged Users: 35. Active Users: 18 (51% adoption). Session Recordings: 245. ARAM Events Generated: 32. SIEM Integration: None. Primary Contact: Alex Johnson, CTO. Last QBR: Never conducted. Renewal Date: 2026-02-28. Expansion Opportunity: None identified. Support Tickets Last Quarter: 7 (avg resolution 18hrs). NPS Score: 5. Risk Factors: Never had QBR, low adoption, no executive engagement, struggling with onboarding. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-006-START-VENT",
+        "industry": "technology",
+        "health_score": "52",
+        "churn_risk": "high"
+      }
+    },
+    {
+      "id": "acct_007_profile",
+      "text": "Account: State University System. Industry: Education/Higher Ed. Employees: 12000. Contract Value: $180K ARR. Products: KeeperPAM Enterprise, Password Manager, Secrets Manager. Deployment Date: 2023-09-05. Health Score: 82/100. Gateway Connections Last 30d: 48,300. Privileged Users: 520. Active Users: 468 (90% adoption). Session Recordings: 12,400. ARAM Events Generated: 1,580. SIEM Integration: LogRhythm. Primary Contact: Dr. Maria Santos, VP Information Technology. Last QBR: 2025-08-10. Renewal Date: 2026-09-05. Expansion Opportunity: Student credential management, additional campuses. Support Tickets Last Quarter: 10 (avg resolution 3hrs). NPS Score: 9. Risk Factors: Budget constraints for expansion. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-007-STATE-UNI",
+        "industry": "education",
+        "health_score": "82",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_008_profile",
+      "text": "Account: RetailMax Corporation. Industry: Retail. Employees: 6200. Contract Value: $142K ARR. Products: KeeperPAM Enterprise, Password Manager. Deployment Date: 2024-04-22. Health Score: 41/100. Gateway Connections Last 30d: 2,100. Privileged Users: 380. Active Users: 125 (33% adoption). Session Recordings: 680. ARAM Events Generated: 95. SIEM Integration: None. Primary Contact: Jennifer Walsh, IT Security Manager. Last QBR: 2025-04-22. Renewal Date: 2026-04-22. Expansion Opportunity: None - at risk. Support Tickets Last Quarter: 28 (avg resolution 22hrs). NPS Score: 3. Risk Factors: Critical - extremely low adoption, no follow-up after initial QBR, high support burden, no SIEM integration, executive sponsor left company. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-008-RETAIL-MAX",
+        "industry": "retail",
+        "health_score": "41",
+        "churn_risk": "critical"
+      }
+    },
+    {
+      "id": "acct_009_profile",
+      "text": "Account: Energy Solutions International. Industry: Energy & Utilities. Employees: 4500. Contract Value: $165K ARR. Products: KeeperPAM Enterprise, Secrets Manager, RBI. Deployment Date: 2023-11-10. Health Score: 88/100. Gateway Connections Last 30d: 52,800. Privileged Users: 450. Active Users: 423 (94% adoption). Session Recordings: 14,200. ARAM Events Generated: 1,920. SIEM Integration: ArcSight. Primary Contact: David Thompson, VP Cybersecurity. Last QBR: 2025-09-12. Renewal Date: 2026-11-10. Expansion Opportunity: KeeperAI threat detection, additional operational sites. Support Tickets Last Quarter: 6 (avg resolution 2.8hrs). NPS Score: 9. Risk Factors: None. FedRAMP Required: No. Compliance: NERC CIP.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-009-ENERGY-INTL",
+        "industry": "energy",
+        "health_score": "88",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_010_profile",
+      "text": "Account: Department of Veterans Affairs - Regional. Industry: Government/Federal. Employees: 22000. Contract Value: $680K ARR. Products: KeeperPAM GovCloud, Secrets Manager, EPM, RBI. Deployment Date: 2022-08-15. Health Score: 94/100. Gateway Connections Last 30d: 198,400. Privileged Users: 2,100. Active Users: 2,058 (98% adoption). Session Recordings: 52,300. ARAM Events Generated: 6,850. SIEM Integration: Splunk Enterprise Security. Primary Contact: William Carter, Regional CIO. Last QBR: 2025-09-20. Renewal Date: 2025-08-15. Expansion Opportunity: Additional medical centers, KeeperAI deployment. Support Tickets Last Quarter: 12 (avg resolution 0.8hrs). NPS Score: 10. Risk Factors: None. FedRAMP Required: Yes. Compliance: NIST 800-53, FISMA, HIPAA.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-010-VA-REG",
+        "industry": "government",
+        "health_score": "94",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_011_profile",
+      "text": "Account: CloudFirst Technologies. Industry: Technology & SaaS. Employees: 420. Contract Value: $52K ARR. Products: KeeperPAM Business, Secrets Manager. Deployment Date: 2024-06-08. Health Score: 75/100. Gateway Connections Last 30d: 8,900. Privileged Users: 85. Active Users: 72 (85% adoption). Session Recordings: 2,340. ARAM Events Generated: 380. SIEM Integration: Datadog. Primary Contact: Emily Zhang, Head of Security. Last QBR: 2025-08-28. Renewal Date: 2026-06-08. Expansion Opportunity: Password Manager for all employees, EPM. Support Tickets Last Quarter: 5 (avg resolution 3.5hrs). NPS Score: 8. Risk Factors: None. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-011-CLOUD-TECH",
+        "industry": "technology",
+        "health_score": "75",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_012_profile",
+      "text": "Account: MegaBank Financial Group. Industry: Banking & Finance. Employees: 18500. Contract Value: $525K ARR. Products: KeeperPAM Enterprise, Secrets Manager, RBI, EPM. Deployment Date: 2022-03-12. Health Score: 91/100. Gateway Connections Last 30d: 142,600. Privileged Users: 1,650. Active Users: 1,584 (96% adoption). Session Recordings: 38,900. ARAM Events Generated: 5,200. SIEM Integration: IBM QRadar. Primary Contact: Richard Williams, Chief Information Security Officer. Last QBR: 2025-09-18. Renewal Date: 2025-03-12. Expansion Opportunity: International branches, KeeperAI threat detection. Support Tickets Last Quarter: 14 (avg resolution 1.5hrs). NPS Score: 9. Risk Factors: None. FedRAMP Required: No. Compliance: SOX, PCI-DSS, GLBA.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-012-MEGA-BANK",
+        "industry": "financial_services",
+        "health_score": "91",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_013_profile",
+      "text": "Account: Metro Transit Authority. Industry: Transportation & Logistics. Employees: 8900. Contract Value: $198K ARR. Products: KeeperPAM Enterprise, Password Manager, Secrets Manager. Deployment Date: 2024-01-20. Health Score: 59/100. Gateway Connections Last 30d: 12,400. Privileged Users: 520. Active Users: 310 (60% adoption). Session Recordings: 3,100. ARAM Events Generated: 425. SIEM Integration: None. Primary Contact: Carlos Martinez, Director IT Operations. Last QBR: 2025-07-15. Renewal Date: 2026-01-20. Expansion Opportunity: Unclear. Support Tickets Last Quarter: 22 (avg resolution 11hrs). NPS Score: 5. Risk Factors: Moderate adoption issues, operational team resistance, no SIEM integration, delayed mobile rollout. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-013-METRO-TRANS",
+        "industry": "transportation",
+        "health_score": "59",
+        "churn_risk": "medium"
+      }
+    },
+    {
+      "id": "acct_014_profile",
+      "text": "Account: PharmaCorp Research. Industry: Pharmaceutical & Life Sciences. Employees: 2800. Contract Value: $132K ARR. Products: KeeperPAM Enterprise, Secrets Manager. Deployment Date: 2023-05-18. Health Score: 84/100. Gateway Connections Last 30d: 38,200. Privileged Users: 340. Active Users: 315 (93% adoption). Session Recordings: 9,600. ARAM Events Generated: 1,340. SIEM Integration: Splunk. Primary Contact: Dr. Susan Miller, VP Information Security. Last QBR: 2025-08-05. Renewal Date: 2026-05-18. Expansion Opportunity: RBI for contractor access, additional research sites. Support Tickets Last Quarter: 7 (avg resolution 2.2hrs). NPS Score: 9. Risk Factors: None. FedRAMP Required: No. Compliance: FDA 21 CFR Part 11, HIPAA.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-014-PHARMA-RES",
+        "industry": "pharmaceutical",
+        "health_score": "84",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_015_profile",
+      "text": "Account: Digital Media Studios. Industry: Media & Entertainment. Employees: 650. Contract Value: $48K ARR. Products: KeeperPAM Business, Password Manager. Deployment Date: 2024-09-10. Health Score: 38/100. Gateway Connections Last 30d: 420. Privileged Users: 95. Active Users: 28 (29% adoption). Session Recordings: 145. ARAM Events Generated: 18. SIEM Integration: None. Primary Contact: Kevin Lee, IT Manager. Last QBR: Never conducted. Renewal Date: 2025-09-10. Expansion Opportunity: None - at risk. Support Tickets Last Quarter: 16 (avg resolution 26hrs). NPS Score: 3. Risk Factors: Critical - extremely low adoption, no QBR scheduled, poor onboarding completion, key contact unresponsive, renewal in 2 weeks. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-015-DIGITAL-MED",
+        "industry": "media",
+        "health_score": "38",
+        "churn_risk": "critical"
+      }
+    },
+    {
+      "id": "acct_016_profile",
+      "text": "Account: Defense Contractor Alliance. Industry: Aerospace & Defense. Employees: 5200. Contract Value: $285K ARR. Products: KeeperPAM GovCloud, Secrets Manager, EPM, RBI. Deployment Date: 2023-02-28. Health Score: 89/100. Gateway Connections Last 30d: 78,900. Privileged Users: 580. Active Users: 552 (95% adoption). Session Recordings: 21,400. ARAM Events Generated: 2,850. SIEM Integration: Splunk. Primary Contact: General (Ret.) Patricia Foster, VP Cybersecurity. Last QBR: 2025-09-15. Renewal Date: 2026-02-28. Expansion Opportunity: KeeperAI threat detection, additional classified programs. Support Tickets Last Quarter: 9 (avg resolution 1.8hrs). NPS Score: 10. Risk Factors: None. FedRAMP Required: Yes. Compliance: NIST 800-171, CMMC Level 3, ITAR.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-016-DEFENSE-ALL",
+        "industry": "aerospace",
+        "health_score": "89",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_017_profile",
+      "text": "Account: InsureTech Holdings. Industry: Insurance. Employees: 3400. Contract Value: $98K ARR. Products: KeeperPAM Enterprise, Password Manager. Deployment Date: 2024-05-15. Health Score: 71/100. Gateway Connections Last 30d: 22,100. Privileged Users: 290. Active Users: 235 (81% adoption). Session Recordings: 5,800. ARAM Events Generated: 780. SIEM Integration: Microsoft Sentinel. Primary Contact: Amanda Rogers, Chief Technology Officer. Last QBR: 2025-08-20. Renewal Date: 2026-05-15. Expansion Opportunity: Secrets Manager, increased licenses. Support Tickets Last Quarter: 11 (avg resolution 5.5hrs). NPS Score: 7. Risk Factors: Some adoption resistance from legacy teams. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-017-INSURE-TECH",
+        "industry": "insurance",
+        "health_score": "71",
+        "churn_risk": "medium"
+      }
+    },
+    {
+      "id": "acct_018_profile",
+      "text": "Account: National Laboratory Network. Industry: Research & Development. Employees: 9500. Contract Value: $385K ARR. Products: KeeperPAM Enterprise, Secrets Manager, EPM, RBI. Deployment Date: 2022-10-08. Health Score: 93/100. Gateway Connections Last 30d: 98,700. Privileged Users: 980. Active Users: 946 (97% adoption). Session Recordings: 28,600. ARAM Events Generated: 3,900. SIEM Integration: ArcSight. Primary Contact: Dr. Rachel Kim, Director IT Security. Last QBR: 2025-09-22. Renewal Date: 2025-10-08. Expansion Opportunity: Partner laboratory integration, KeeperAI. Support Tickets Last Quarter: 8 (avg resolution 1.2hrs). NPS Score: 10. Risk Factors: None. FedRAMP Required: No. Compliance: NIST 800-53, DOE requirements.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-018-NAT-LAB",
+        "industry": "research",
+        "health_score": "93",
+        "churn_risk": "low"
+      }
+    },
+    {
+      "id": "acct_019_profile",
+      "text": "Account: Legal Partners Group. Industry: Legal Services. Employees: 420. Contract Value: $38K ARR. Products: KeeperPAM Business. Deployment Date: 2025-01-12. Health Score: 48/100. Gateway Connections Last 30d: 680. Privileged Users: 55. Active Users: 22 (40% adoption). Session Recordings: 198. ARAM Events Generated: 24. SIEM Integration: None. Primary Contact: Thomas Anderson, Managing Partner. Last QBR: 2025-07-10. Renewal Date: 2026-01-12. Expansion Opportunity: None identified. Support Tickets Last Quarter: 13 (avg resolution 15hrs). NPS Score: 4. Risk Factors: Low engagement from partners, adoption stalled, no technical champion, QBR had minimal attendance. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-019-LEGAL-GRP",
+        "industry": "legal",
+        "health_score": "48",
+        "churn_risk": "high"
+      }
+    },
+    {
+      "id": "acct_020_profile",
+      "text": "Account: Global Logistics Networks. Industry: Transportation & Logistics. Employees: 11200. Contract Value: $245K ARR. Products: KeeperPAM Enterprise, Secrets Manager, RBI. Deployment Date: 2023-07-22. Health Score: 86/100. Gateway Connections Last 30d: 68,300. Privileged Users: 720. Active Users: 662 (92% adoption). Session Recordings: 19,200. ARAM Events Generated: 2,450. SIEM Integration: LogRhythm. Primary Contact: Michael O'Brien, Global Head of IT Security. Last QBR: 2025-09-08. Renewal Date: 2026-07-22. Expansion Opportunity: Additional regional hubs, mobile workforce expansion. Support Tickets Last Quarter: 13 (avg resolution 3.2hrs). NPS Score: 8. Risk Factors: None. FedRAMP Required: No.",
+      "metadata": {
+        "source": "salesforce_account_export",
+        "timestamp": "2025-09-30 08:00:00",
+        "account_id": "SF-020-GLOBAL-LOG",
+        "industry": "logistics",
+        "health_score": "86",
+        "churn_risk": "low"
+      }
+    }
+  ]
