@@ -4,7 +4,7 @@ USER root
 
 # Set environment variables
 ENV HOME=/root \
-  PYTHONPATH=/workspace \
+  PYTHONPATH=/workspaces \
   PYTHONDONTWRITEBYTECODE=1 \
   PYTHONUNBUFFERED=1 \
   PIP_DISABLE_PIP_VERSION_CHECK=1 \
@@ -19,7 +19,7 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && apt-get install -y git
 
 # Set up working directory
-WORKDIR /workspace
+WORKDIR /workspaces
 
 # Copy the colored MOTD script for interactive shells
 COPY .devcontainer/motd.sh /etc/profile.d/motd.sh
