@@ -1,10 +1,15 @@
 # Knowledge Base Tool - Technical Interview
 
 ## Overview
+
 This is an interactive CLI tool for managing semantic knowledge using ChromaDB vector databases. It enables RAG (Retrieval-Augmented Generation) style lookups on business data, allowing you to find similar accounts, identify patterns, and query customer information semantically.
 
+This technical interview evaluates candidates by providing a comprehensive semantic search system with multiple datasets and letting candidates demonstrate their technical depth, system design skills, and business understanding through self-guided exploration and improvements.
+
 ## Setup (Already Done in Codespace!)
+
 The environment is pre-configured with:
+
 - Python 3.12
 - ChromaDB
 - Sentence Transformers (BGE and E5 models)
@@ -12,121 +17,142 @@ The environment is pre-configured with:
 ## Quick Start
 
 ### 1. Load sample data
+
 ```bash
 python ingest_knowledge_interactive.py
 ```
 
 Then in the interactive prompt:
-```
-> r sample_data.json
-✅ Imported 20 records to all 3 collections for 'semantic_knowledge'.
+
+```bash
+> r data/sample_data.json
+✅ Imported records to all 3 collections for 'imported_data'.
 ```
 
 ### 2. Try searching
-```
+
+```bash
 > ? threat detection
-[1] 📄 Account: Federal Defense Logistics Agency. Industry: Government/Federal...
-
-> ? keeper security products
-[1] 📄 Account: MegaBank Financial Group. Industry: Banking & Finance...
-
+> ? customer churn risk  
 > ? government fedramp
-[1] 📄 Account: Federal Defense Logistics Agency...
-[2] 📄 Account: Department of Veterans Affairs - Regional...
 ```
 
 ### 3. List all entries
 ```
 > ?
-
-===  📚 Stored Entries ===
-
-[1] 📝 Account: Acme Financial Services. Industry: Banking & Finance...
-📄 source: salesforce_account_export
-📄 timestamp: 2025-09-30 08:00:00
-📄 account_id: SF-001-ACME-FIN
-
-[2] 📝 Account: TechCorp Industries. Industry: Technology & SaaS...
-📄 source: salesforce_account_export
-📄 timestamp: 2025-09-30 08:00:00
-📄 account_id: SF-002-TECH-IND
-...
 ```
 
-### 4. View with details
+## Available Data Samples
+
+The repository includes three distinct datasets for comprehensive evaluation:
+
+### 📊 `data/sample_data.json` - Keeper Product Knowledge
+**Purpose**: General semantic search testing with Keeper Security domain knowledge
+
+**Content**: 
+- Company descriptions (Keeper Security, KeeperAI, zero-knowledge platform)
+- Product capabilities (password management, PAM, threat detection)
+- Technical details (ARAM events, session recordings, behavioral analysis)
+- Compliance information (FedRAMP authorization, government customers)
+
+**Sample Entry**:
+```json
+{
+   "id": "fact_1704153600000", 
+   "text": "KeeperAI uses machine learning to detect insider threats by analyzing privileged session commands in real-time.",
+   "metadata": {"source": "product_info", "timestamp": "2024-01-02 00:00:00"}
+}
 ```
-> ?? high churn risk
 
-===  🔍 Top Matches for 'high churn risk': ===
+### 🏢 `data/account_data.json` - Customer Account Intelligence
+**Purpose**: Real-world customer data for business intelligence and analytics workflows
 
-[1] 📄 Account: RetailMax Corporation. Industry: Retail...
-   source: salesforce_account_export
-   timestamp: 2025-09-30 08:00:00
-   account_id: SF-008-RETAIL-MAX
-   industry: retail
-   health_score: 41
-   churn_risk: critical
+**Content**: 20 detailed Salesforce customer accounts including:
+- **Account Profiles**: Names, industries, employee counts, contract values ($18K-$680K ARR)
+- **Product Usage**: KeeperPAM versions (Enterprise/Business/GovCloud), Secrets Manager, RBI, EPM
+- **Health Metrics**: Health scores (41-94/100), adoption rates (33-95%), NPS scores (4-10)
+- **Usage Data**: Gateway connections, session recordings, ARAM events generated
+- **Risk Indicators**: Support tickets, churn risk levels, executive sponsors, renewal dates
+- **Compliance**: FedRAMP requirements, SIEM integrations (Splunk, QRadar, Sentinel)
+
+**Sample Entries**:
+- **Healthy Account**: Acme Financial Services - 85/100 health, 92% adoption, strong Splunk integration
+- **At-Risk Account**: TechCorp Industries - 45/100 health, 38% adoption, 18 support tickets, no SIEM
+- **Critical Account**: RetailMax Corporation - 41/100 health, 33% adoption, executive sponsor left
+- **Enterprise**: Federal Defense Logistics Agency - 92/100 health, FedRAMP certified, $450K ARR
+
+```json
+{
+   "id": "acct_001_profile",
+   "text": "Account: Acme Financial Services. Industry: Banking & Finance. Employees: 2500. Contract Value: $125K ARR. Products: KeeperPAM Enterprise, Secrets Manager. Deployment Date: 2024-03-15. Health Score: 85/100. Gateway Connections Last 30d: 45,230. Privileged Users: 340. Active Users: 312 (92% adoption). Session Recordings: 8,420. ARAM Events Generated: 1,250. SIEM Integration: Splunk. Primary Contact: Sarah Chen, CISO. Last QBR: 2025-08-15. Renewal Date: 2026-03-15. Expansion Opportunity: Remote Browser Isolation. Support Tickets Last Quarter: 3 (avg resolution 2.5hrs). NPS Score: 9. Risk Factors: None. FedRAMP Required: No.",
+   "metadata": {"source": "salesforce_account_export", "timestamp": "2025-09-30 08:00:00", "account_id": "SF-001-ACME-FIN", "industry": "financial_services", "health_score": "85", "churn_risk": "low"}
+}
 ```
 
-## Interview Tasks (1hr - 2hr)
+### 📈 `data/churn_prediction.json` - Customer Success Analytics  
+**Purpose**: Analytics insights and patterns for predictive modeling and business intelligence
 
->Add more time on questions - get more breadth of modeling - questions about why you pick a model, what about quantization, limitations for each/pros for each - mixed precision, scale and new model adjustments
+**Content**: Customer success analytics including:
+- **Churn Prediction Patterns**: Onboarding timelines, adoption patterns, retention correlations
+- **Product Impact Analysis**: KeeperAI adoption → 65% higher renewal rates, feature usage correlations
+- **Support Analytics**: Ticket resolution patterns, onboarding delays → churn risk
+- **Compliance Insights**: FedRAMP documentation requirements, deployment timelines
+- **Behavioral Patterns**: Session activity correlations, threat detection effectiveness
 
->CLI or webapp, which is easier and how can you find a solution that is flexiable for both
+**Sample Entry**:
 
->Get a guage of GenAI skills vs Data Science skills - ask questions to guide both paths and see where he is more comfortable in
+```json
+{
+   "id": "fact_1727894531002",
+   "text": "Customers who adopt KeeperAI threat detection within 90 days show 65% higher renewal rates compared to those using only password management features",
+   "metadata": {"source": "Product Analytics", "timestamp": "2025-09-20 09:15:33"}
+}
+```
 
->Is sentance transformers the only way to do this? Are there other systems/soluitions that can be leveraged. Should we explore more GenAI/SQL generation, EDA type of processing
+**Pro tip for candidates**: Load multiple datasets sequentially to see how the system handles different data structures and scales.
 
-> Find a way to influence LLM skills - can we make this be LLM driven, LLM generated data, Agentic system?
+## Interview Timeline (2 hours total)
 
->Business Alignment - What does keeper need ... 
+### Phase 1: Understanding & Technical Analysis
 
-### Phase 1: Understanding (20 min)
-**Questions to consider:**
-- Explain what the code does at a high level
-- How do embedding models work in this context?
-- What are BGE vs E5 models and why use both?
-- Why does the tool maintain 3 parallel collections? / or do a single one
-- What is the `format_for_embedding` function doing?
+**Explore the system and demonstrate deep ML understanding**
 
-### Phase 2: Analysis (30 min)
-**Improvement opportunities:**
-- What improvements would you make to this codebase?
-- Why those specific improvements?
-- What's the priority order?
-- What are the current pain points or risks?
+**Areas to investigate:**
+- How embedding models work (BGE vs E5 differences)  
+- Model architecture tradeoffs (speed vs accuracy vs memory)
+- Optimization opportunities (quantization, mixed precision)
+- Scale considerations (1M documents, high QPS requirements, updates to embedding models)
 
-### Phase 3: Implementation (45 min)
-**Coding challenge:**
-- Implement 1-2 improvements from your analysis
-- Test with sample data
-- Demonstrate the changes work correctly
-- Explain your implementation choices
+**Questions candidates might explore:**
+- What are the quantization vs accuracy tradeoffs for semantic search?
+- How would you architect this for production scale?
+- What alternatives to sentence-transformers exist?
 
-## Sample Data Overview
+### Phase 2: Deep Dive & Business Fit
 
-The `sample_data.json` contains 20 Salesforce account records including:
+**Explore LLM integration possibilities**
+- Could this be enhanced with query expansion?
+- How might answer synthesis improve over raw document retrieval?
+- What about synthetic data generation for testing?
+- Design agentic systems that can reason and act on search results
 
-### Healthy Accounts (Low Churn Risk)
-- **Acme Financial Services** - 85/100 health, 92% adoption, strong SIEM integration
-- **Federal Defense Logistics Agency** - 92/100 health, FedRAMP certified, 95% adoption
-- **MegaBank Financial Group** - 91/100 health, enterprise deployment with full product suite
+**Transform into analytics and business intelligence system**  
+- Design data warehouse schemas for the account data
+- Implement EDA workflows and correlation analysis
+- Traditional feature engineering vs embedding-based approaches
 
-### At-Risk Accounts (High/Critical Churn Risk)
-- **TechCorp Industries** - 45/100 health, only 38% adoption, 18 support tickets
-- **RetailMax Corporation** - 41/100 health, 33% adoption, executive sponsor left
-- **Digital Media Studios** - 38/100 health, 29% adoption, renewal in 2 weeks, no QBR
+### Phase 3: System Design & Implementation
+**Demonstrate architectural thinking and practical implementation**
 
-### Key Data Points Per Account
-- Contract value ($18K - $680K ARR)
-- Deployment dates and health scores
-- Product adoption (KeeperPAM, Secrets Manager, RBI, EPM)
-- Usage metrics (gateway connections, session recordings, ARAM events)
-- Support ticket volume and resolution times
-- NPS scores and risk factors
-- SIEM integrations (Splunk, QRadar, Sentinel, etc.)
-- Compliance requirements (FedRAMP, HIPAA, NIST, etc.)
+- Explore bugs and address quality/functionality issues
+- Multi-interface architecture (CLI, REST API, Web UI, Python SDK)
+- Production considerations (monitoring, caching, testing, error handling)
+- Privacy and compliance (FedRAMP, audit trails, explainable AI)
+
+**Implementation focus:**
+- Pick specific areas for enhancement and implement them
+- Show understanding of production constraints
+- Demonstrate business alignment with Keeper's needs
 
 ## Commands Reference
 
@@ -146,91 +172,9 @@ The `sample_data.json` contains 20 Salesforce account records including:
 
 | Option | Description | Example |
 |--------|-------------|---------|
-| `--load-file FILE` | Load data from a specific JSON file on startup (default: `data/sample_data.json`) | `--load-file data/churn_prediction.json` |
-| `--dont-clear` | Do **not** clear ChromaDB collections on startup (by default, collections are cleared) | `--dont-clear` |
+| `--load-file FILE` | Load data from a specific JSON file on startup | `--load-file data/churn_prediction.json` |
+| `--dont-clear` | Do **not** clear ChromaDB collections on startup | `--dont-clear` |
 
-
-## Sample Query Examples
-
-### Business Intelligence Queries
-```bash
-# Find accounts with churn risk
-> ? critical churn risk accounts
-> ? low adoption high support tickets
-
-# Identify expansion opportunities
-> ? high health score banking financial
-> ? government fedramp ready for keeper ai
-
-# Product adoption patterns
-> ? secrets manager splunk integration
-> ? remote browser isolation enterprise
-
-# Support and health analysis
-> ? poor nps score retail
-> ? high support volume no siem
-```
-
-### Customer Segmentation
-```bash
-# By industry
-> ? healthcare hipaa compliance
-> ? federal government defense
-> ? technology saas startups
-
-# By product suite
-> ? full product suite enterprise
-> ? keeperpam only basic
-
-# By size/scale
-> ? large enterprise 10000 employees
-> ? small business under 500
-```
-
-### Risk & Retention Analysis
-```bash
-# Early warning signals
-> ? low adoption no qbr
-> ? declining gateway connections
-> ? executive sponsor left
-
-# Success patterns
-> ? high nps strong adoption
-> ? siem integration automated rotation
-> ? fedramp compliant government
-```
-
-## Expected Output Examples
-
-### Successful Search
-```
-> ?federal government high security
-
-===  🔍 Top Matches for 'federal government high security': ===
-
-[1] 📄 Account: Department of Veterans Affairs - Regional. Industry: Government/Federal. Employees: 22000. Contract Value: $680K ARR. Products: KeeperPAM GovCloud, Secrets Manager, EPM, RBI. Health Score: 94/100...
-
-[2] 📄 Account: Federal Defense Logistics Agency. Industry: Government/Federal. Employees: 15000. Contract Value: $450K ARR. Products: KeeperPAM GovCloud, Secrets Manager, EPM. Health Score: 92/100...
-```
-
-### Empty Results
-```
-> ? blockchain cryptocurrency
-
-🔍 No matching results found.
-```
-
-### Export Operation
-```
-> w my_backup.json
-📤 Exported collection to 'my_backup.json' (20 records).
-```
-
-### Delete Operation
-```
-> -5
-🗑️ Deleted fact #5 from all model variants of 'semantic_knowledge'
-```
 
 ## Expected Improvement Areas
 
@@ -242,7 +186,7 @@ Consider exploring these areas:
 - Edge case handling (empty queries, special characters)
 - Type hints and documentation
 
-### Performance
+### Performance  
 - Query result caching
 - Batch operations optimization
 - Collection switching efficiency
@@ -260,7 +204,7 @@ Consider exploring these areas:
 - Advanced search operators (AND, OR, NOT)
 - Fuzzy matching threshold configuration
 - Result ranking explanations
-- Export/import format options (CSV, JSONL)
+- Export/Import format options (CSV, JSONL)
 
 ### Testing
 - Unit tests for core functions
@@ -274,78 +218,48 @@ Consider exploring these areas:
 - Plugin system for different embedding models
 - API wrapper for programmatic access
 
-## Common Issues & Debugging
+### Advanced Capabilities
+- Hybrid search (semantic + keyword retrieval)
+- Metadata filtering with complex queries
+- Cross-encoder reranking for relevance
+- Query-by-example functionality
+- Multi-modal search across different data types
 
-### Models not downloading
-```bash
-# Check disk space
-df -h
+## Business Context & Applications
 
-# Manually trigger download
-python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-base-en-v1.5')"
-```
+### Keeper Security Domain Applications
+- **Threat Detection**: Use account behavior patterns to identify insider threats
+- **Customer Success**: Early warning systems for churn risk and expansion opportunities  
+- **Compliance**: Automated FedRAMP documentation and audit trail generation
+- **Product Analytics**: Understanding feature adoption patterns and usage correlations
 
-### ChromaDB permissions
-```bash
-# Check permissions
-ls -la ~/chroma_index
-
-# Reset if needed
-rm -rf ~/chroma_index
-```
-
-### Search returns no results
-- Try broader queries first, then narrow down
-- Check that data was imported successfully with `?`
-- Verify the collection name matches (`semantic_knowledge`)
+### Real-World Integration Possibilities
+- **Session Recording Analysis**: Search across behavioral patterns in video/text transcripts
+- **ARAM Event Processing**: Real-time threat scoring based on command analysis
+- **Support Ticket Intelligence**: Pattern analysis for automated routing and resolution
+- **Compliance Automation**: Regulatory document generation and validation
 
 ## Advanced Usage
 
-### Working with Multiple Collections
+### Working with Different Datasets
 ```bash
-# Switch to metadata collection
-python ingest_knowledge_interactive.py -cn dbt_metadata -em bge-large
+# Load product knowledge
+python ingest_knowledge_interactive.py --load-file data/sample_data.json
 
-# Use different embedding model
+# Load customer accounts  
+python ingest_knowledge_interactive.py --load-file data/account_data.json
+
+# Load analytics data
+python ingest_knowledge_interactive.py --load-file data/churn_prediction.json
+```
+
+### Working with Multiple Models
+```bash
+# Switch to larger model
+python ingest_knowledge_interactive.py -em bge-large
+
+# Try E5 model
 python ingest_knowledge_interactive.py -em e5-large
-
-# Custom persistence directory
-python ingest_knowledge_interactive.py -pd /tmp/my_index
 ```
-
-### Schema Filtering (for dbt_metadata collection)
-```bash
-# Only search specific schemas
-python ingest_knowledge_interactive.py -cn dbt_metadata -s data_mart reporting
-
-# Search all schemas
-python ingest_knowledge_interactive.py -cn dbt_metadata -s all
-```
-
-## Tips for Success
-
-1. **Start with broad queries** - Semantic search works best when you describe concepts rather than exact keywords
-2. **Use metadata wisely** - The `??` command shows all metadata which helps refine searches
-3. **Experiment with models** - Different embedding models may surface different results
-4. **Think like a business user** - Query as if you're asking a question to a colleague
-5. **Consider the use case** - This tool is for finding similar accounts/patterns, not exact matches
-
-## Architecture Notes
-
-### Why Three Collections?
-The tool maintains three parallel collections (one per embedding model: bge-base, bge-large, e5-large) to:
-- Allow model comparison without re-indexing
-- Support future model selection features
-- Enable ensemble search strategies
-
-### Embedding Model Differences
-- **BGE-base**: Faster, smaller (768-dim), good general performance
-- **BGE-large**: Slower, larger (1024-dim), better accuracy
-- **E5-large**: Different training approach, may excel at specific query types
-
-### Format Prefixes
-Models require specific query/document prefixes:
-- **BGE**: "Represent this sentence for searching relevant passages: {query}"
-- **E5**: "query: {query}" for queries, "passage: {text}" for documents
 
 Good luck with the interview! 🚀
