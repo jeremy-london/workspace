@@ -1,0 +1,65 @@
+[
+  {
+    "id": "fact_1704067200000",
+    "text": "Keeper Security is a zero-knowledge cybersecurity platform for password management and privileged access management.",
+    "metadata": {
+      "source": "company_info",
+      "timestamp": "2024-01-01 00:00:00"
+    }
+  },
+  {
+    "id": "fact_1704153600000",
+    "text": "KeeperAI uses machine learning to detect insider threats by analyzing privileged session commands in real-time.",
+    "metadata": {
+      "source": "product_info",
+      "timestamp": "2024-01-02 00:00:00"
+    }
+  },
+  {
+    "id": "fact_1704240000000",
+    "text": "FedRAMP authorization allows Keeper to serve hundreds of government customers with compliant security solutions.",
+    "metadata": {
+      "source": "compliance",
+      "timestamp": "2024-01-03 00:00:00"
+    }
+  },
+  {
+    "id": "fact_1704326400000",
+    "text": "ARAM events capture gateway-level session activity for behavioral analysis and anomaly detection.",
+    "metadata": {
+      "source": "technical",
+      "timestamp": "2024-01-04 00:00:00"
+    }
+  },
+  {
+    "id": "fact_1704412800000",
+    "text": "The system can autonomously terminate privileged sessions when critical risk levels are detected.",
+    "metadata": {
+      "source": "product_info",
+      "timestamp": "2024-01-05 00:00:00"
+    }
+  },
+  {
+    "id": "fact_1704499200000",
+    "text": "This is a test entry with missing metadata field",
+    "metadata": {
+      "source": "bad_data"
+    }
+  },
+  {
+    "id": "fact_1704585600000",
+    "text": "",
+    "metadata": {
+      "source": "empty_test",
+      "timestamp": "2024-01-07 00:00:00"
+    }
+  },
+  {
+    "id": "fact_1704672000000",
+    "text": "Zero-trust architecture requires continuous verification of user identity and device security posture.",
+    "metadata": {
+      "source": "security_principles",
+      "timestamp": "2024-01-08 00:00:00"
+    }
+  }
+]
